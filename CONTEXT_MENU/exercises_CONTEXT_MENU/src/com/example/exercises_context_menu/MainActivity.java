@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
-	
+	 
 	final int MENU_COLOR_CYAN = 1;
 	final int MENU_COLOR_MAGENTA = 2;
 	final int MENU_COLOR_YELLOW = 3;
