@@ -7,7 +7,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
+ 
 public class MainActivity extends Activity implements OnClickListener {
 
 	TextView txtOut;
