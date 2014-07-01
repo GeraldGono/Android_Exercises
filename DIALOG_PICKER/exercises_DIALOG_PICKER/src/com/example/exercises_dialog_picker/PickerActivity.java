@@ -10,7 +10,7 @@ public class PickerActivity extends Activity {
 
 	NumberPicker np;
 	TextView tv1, tv2;
-
+ 
 	// initialize activity of PickerActivity.java
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
