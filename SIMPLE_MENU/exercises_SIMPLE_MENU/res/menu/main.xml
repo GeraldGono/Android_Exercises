@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_dog"
+        android:title="Dog">
+    </item>
+    <item
+        android:id="@+id/menu_cat"
+        android:title="Cat">
+    </item>
+    <item
+        android:id="@+id/menu_bird"
+        android:title="Bird">
+    </item>
+    <item
+        android:id="@+id/menu_cow"
+        android:title="Cow">
+    </item>
+    <item
+        android:id="@+id/menu_horse"
+        android:title="Horse">
+    </item>
+    <item
+        android:id="@+id/menu_sheep"
+        android:title="Sheep">
+    </item>
+
+</menu>
