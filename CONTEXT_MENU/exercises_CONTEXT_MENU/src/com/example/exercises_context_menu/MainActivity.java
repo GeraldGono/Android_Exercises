@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
+ 
 public class MainActivity extends Activity implements OnClickListener {
 	 
 	final int MENU_COLOR_CYAN = 1;
