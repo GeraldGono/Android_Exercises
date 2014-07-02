@@ -10,7 +10,7 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
-
+ 
 	Menu menu;
 	ToggleButton tUp, tDown;
 
