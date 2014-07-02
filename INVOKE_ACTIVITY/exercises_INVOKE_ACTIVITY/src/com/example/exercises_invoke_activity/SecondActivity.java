@@ -10,14 +10,15 @@ import android.widget.EditText;
 
 public class SecondActivity extends Activity {
 
-	EditText editText1, editText2;
-	Button button1;
 
 	// initialize the activity for SecondActivity.java
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second);
+		
+		final EditText editText1, editText2;
+		Button button1;
 
 		editText1 = (EditText) findViewById(R.id.editText1);
 		editText2 = (EditText) findViewById(R.id.editText2);
