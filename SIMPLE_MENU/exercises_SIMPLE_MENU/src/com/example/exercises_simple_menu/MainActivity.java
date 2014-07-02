@@ -12,16 +12,16 @@ import android.widget.ToggleButton;
 public class MainActivity extends Activity {
 
 	Menu menu;
-	ToggleButton TUp, TDown;
+	ToggleButton tUp, tDown;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		TUp = (ToggleButton) findViewById(R.id.buttonup);
-		TDown = (ToggleButton) findViewById(R.id.buttondown);
+		tUp = (ToggleButton) findViewById(R.id.buttonup);
+		tDown = (ToggleButton) findViewById(R.id.buttondown);
 
-		TUp.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+		tUp.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			//prompt item dog, cat, and bird in menu item
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		TDown.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+		tDown.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			//prompt item cow, horse, and sheep in menu item
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
