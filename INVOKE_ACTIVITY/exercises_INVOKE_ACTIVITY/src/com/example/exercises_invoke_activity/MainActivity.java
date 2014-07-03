@@ -12,6 +12,8 @@ public class MainActivity extends Activity {
 
 	TextView textView1, textView2;
 	Button button1;
+	
+	static final int PERSON_INFO = 2;
 
 	// initialize the activity for MainActivity.java
 	@Override
@@ -29,7 +31,7 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				Intent intent = new Intent(MainActivity.this,
 						SecondActivity.class);
-				startActivityForResult(intent, 2);
+				startActivityForResult(intent, PERSON_INFO);
 
 			}
 		});
@@ -40,7 +42,7 @@ public class MainActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 
-		if (requestCode == 2) {
+		if (requestCode == PERSON_INFO) {
 			String message = data.getStringExtra("MESSAGE");
 			String message2 = data.getStringExtra("MESSAGE2");
 			textView1.setText(message);
