@@ -10,8 +10,8 @@ import android.widget.Toast;
  
 public class MainActivity extends Activity implements OnClickListener {
 
-	TextView txtOut;
-	Button buttonOk;
+	private TextView txtOut;
+	private Button buttonOk;
 
 	// Initialize activity
 	@Override
