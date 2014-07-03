@@ -14,14 +14,14 @@ public class Touch implements OnTouchListener {
 	private Matrix matrix = new Matrix();
 	private Matrix savedMatrix = new Matrix();
 	// declaration of 3 states of ImageView
-	static final int NONE = 0;
-	static final int DRAG = 1;
-	static final int ZOOM = 2;
-	int mode = NONE;
+	private static final int NONE = 0;
+	private static final int DRAG = 1;
+	private static final int ZOOM = 2;
+	private int mode = NONE;
 
 	private PointF start = new PointF();
 	private PointF mid = new PointF();
-	float oldDist = 1f;
+	private float oldDist = 1f;
 
 	@Override
 	public boolean onTouch(View v, MotionEvent event) {
