@@ -12,13 +12,14 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	TextView txtOut;
 	Button buttonOk;
-	Button buttonReset;
 
 	// Initialize activity
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		Button buttonReset;
 
 		txtOut = (TextView) findViewById(R.id.txtView);
 		buttonOk = (Button) findViewById(R.id.btnOk);
