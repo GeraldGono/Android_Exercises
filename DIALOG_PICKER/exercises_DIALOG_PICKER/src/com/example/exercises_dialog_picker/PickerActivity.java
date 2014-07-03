@@ -8,15 +8,15 @@ import android.widget.TextView;
 
 public class PickerActivity extends Activity {
 
-	NumberPicker np;
-	TextView tv1, tv2;
- 
 	// initialize activity of PickerActivity.java
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.picker);
+		
+		final TextView tv1, tv2;
+		NumberPicker np;
 
 		np = (NumberPicker) findViewById(R.id.numPicker1);
 		tv1 = (TextView) findViewById(R.id.txtView2);
