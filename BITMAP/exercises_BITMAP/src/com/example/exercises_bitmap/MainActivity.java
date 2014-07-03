@@ -9,7 +9,7 @@ import android.widget.ListView;
 public class MainActivity extends Activity {
 
 	ListView liView;
-	static ArrayList<details> listDetails = new ArrayList<details>();
+	ArrayList<details> listDetails = new ArrayList<details>();
 	detailsAdapter adapter;
  
 	// initialize the activity for MainActivity.java
