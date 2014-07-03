@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 public class detailsAdapter extends BaseAdapter {
 	// initialize array list
-	Context mContext;
-	ArrayList<details> mList;
+	private Context mContext;
+	private ArrayList<details> mList;
 
 	public detailsAdapter(Context mContext, ArrayList<details> mList) {
 		super();
