@@ -23,9 +23,9 @@ public class MainActivity extends Activity implements OnClickListener {
 	static final int MENU_SIZE_27 = 5;
 	static final int MENU_SIZE_31 = 6;
 
-	Button btnColor, btnSize;
-	TextView txtOut;
-	LinearLayout myScreen;
+	private Button btnColor, btnSize;
+	private LinearLayout myScreen;
+	public TextView txtOut;
 	// initialize the activity for MainActivity.java
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
