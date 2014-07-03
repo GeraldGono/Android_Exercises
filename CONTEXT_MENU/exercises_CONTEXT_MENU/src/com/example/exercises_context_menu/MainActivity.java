@@ -15,13 +15,13 @@ import android.widget.Toast;
  
 public class MainActivity extends Activity implements OnClickListener {
 	
-	final int MENU_COLOR_CYAN = 1;
-	final int MENU_COLOR_MAGENTA = 2;
-	final int MENU_COLOR_YELLOW = 3;
+	static final int MENU_COLOR_CYAN = 1;
+	static final int MENU_COLOR_MAGENTA = 2;
+	static final int MENU_COLOR_YELLOW = 3;
 
-	final int MENU_SIZE_23 = 4;
-	final int MENU_SIZE_27 = 5;
-	final int MENU_SIZE_31 = 6;
+	static final int MENU_SIZE_23 = 4;
+	static final int MENU_SIZE_27 = 5;
+	static final int MENU_SIZE_31 = 6;
 
 	Button btnColor, btnSize;
 	TextView txtOut;
