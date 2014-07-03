@@ -11,8 +11,8 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
  
-	Menu menu;
-	ToggleButton tUp, tDown;
+	private Menu menu;
+	private ToggleButton tUp, tDown;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
