@@ -3,8 +3,9 @@ package com.example.exercises_bitmap;
 import android.graphics.Bitmap;
 
 public class details {
-	Bitmap image;
-	String name;
+	
+	private Bitmap image;
+	private String name;
 
 	// set Bitmap image and text name
 	public details(Bitmap image, String name) {

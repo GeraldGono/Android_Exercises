@@ -11,17 +11,17 @@ import android.widget.ImageView;
 
 public class Touch implements OnTouchListener {
 	// matrices will be used to move and zoom images
-	Matrix matrix = new Matrix();
-	Matrix savedMatrix = new Matrix();
+	private Matrix matrix = new Matrix();
+	private Matrix savedMatrix = new Matrix();
 	// declaration of 3 states of ImageView
-	static final int NONE = 0;
-	static final int DRAG = 1;
-	static final int ZOOM = 2;
-	int mode = NONE;
+	private static final int NONE = 0;
+	private static final int DRAG = 1;
+	private static final int ZOOM = 2;
+	private int mode = NONE;
 
-	PointF start = new PointF();
-	PointF mid = new PointF();
-	float oldDist = 1f;
+	private PointF start = new PointF();
+	private PointF mid = new PointF();
+	private float oldDist = 1f;
 
 	@Override
 	public boolean onTouch(View v, MotionEvent event) {

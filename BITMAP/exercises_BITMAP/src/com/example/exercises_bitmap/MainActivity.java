@@ -8,10 +8,10 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
-	ListView liView;
-	static ArrayList<details> listDetails = new ArrayList<details>();
-	detailsAdapter adapter;
-
+	private ListView liView;
+	private ArrayList<details> listDetails = new ArrayList<details>();
+	private detailsAdapter adapter;
+ 
 	// initialize the activity for MainActivity.java
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
