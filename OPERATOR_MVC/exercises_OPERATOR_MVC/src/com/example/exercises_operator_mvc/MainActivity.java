@@ -11,7 +11,7 @@ import com.example.exercises_operator_mvc.R;
 import com.example.exercises_operator_mvc.ControlOperation;
 import com.example.exercises_operator_mvc.ModelOperation;
 import com.example.exercises_operator_mvc.ViewOperation;
-
+ 
 public class MainActivity extends Activity {
 
 	public Button calculate;
