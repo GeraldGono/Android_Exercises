@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	private Button btn1;
 
 	// initialize the activity of MainActivity.java
 	@Override
@@ -20,6 +19,8 @@ public class MainActivity extends Activity {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		Button btn1;
 
 		btn1 = (Button) findViewById(R.id.btn1);
 		btn1.setOnClickListener(new OnClickListener() {
