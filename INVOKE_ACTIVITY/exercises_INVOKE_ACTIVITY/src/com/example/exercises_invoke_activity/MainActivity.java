@@ -7,17 +7,20 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-
+ 
 public class MainActivity extends Activity {
 
-	TextView textView1, textView2;
-	Button button1;
+	private TextView textView1, textView2;
+	
+	private static final int REQUEST_PERSON_INFO = 2;
 
 	// initialize the activity for MainActivity.java
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		Button button1;
 
 		textView1 = (TextView) findViewById(R.id.textView1);
 		textView2 = (TextView) findViewById(R.id.textView2);
@@ -29,7 +32,7 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				Intent intent = new Intent(MainActivity.this,
 						SecondActivity.class);
-				startActivityForResult(intent, 2);
+				startActivityForResult(intent, REQUEST_PERSON_INFO);
 
 			}
 		});
@@ -40,7 +43,7 @@ public class MainActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 
-		if (requestCode == 2) {
+		if (requestCode == REQUEST_PERSON_INFO) {
 			String message = data.getStringExtra("MESSAGE");
 			String message2 = data.getStringExtra("MESSAGE2");
 			textView1.setText(message);

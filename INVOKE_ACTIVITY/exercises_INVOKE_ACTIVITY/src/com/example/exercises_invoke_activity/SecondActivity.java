@@ -33,7 +33,7 @@ public class SecondActivity extends Activity {
 				Intent intent = new Intent();
 				intent.putExtra("MESSAGE", message);
 				intent.putExtra("MESSAGE2", message2);
-				setResult(2, intent);
+				setResult(Activity.RESULT_OK, intent);
 
 				finish();
 
